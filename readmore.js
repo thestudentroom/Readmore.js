@@ -3,7 +3,8 @@
  *
  * Readmore.js jQuery plugin
  * Author: @jed_foster
- * Project home: http://jedfoster.github.io/Readmore.js
+ * Project home: https://github.com/thestudentroom/Readmore.js
+ * Original project home: http://jedfoster.github.io/Readmore.js
  * Licensed under the MIT license
  *
  * Debounce function from http://davidwalsh.name/javascript-debounce-function
@@ -236,9 +237,9 @@
           newLink = '',
           expanded = false,
           collapsedHeight = $element.data('collapsedHeight');
-
+      // Now use 'auto', but to get original height value use newHeight = $element.data('expandedHeight') + 'px';
       if ($element.height() <= collapsedHeight) {
-        newHeight = $element.data('expandedHeight') + 'px';
+        newHeight = 'auto';
         newLink = 'lessLink';
         expanded = true;
       }
